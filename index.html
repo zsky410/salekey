@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Store - Cửa hàng kỹ thuật số</title>
+
+    <!-- Font Awesome - đặt lên đầu -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Digital Store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sản phẩm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div class="swiper hero-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div
+            class="hero-slide"
+            style="background-image: url('images/banner1.png')"
+          >
+            <div class="container">
+              <div class="hero-content">
+                <h1 data-aos="fade-up">Sản phẩm kỹ thuật số chất lượng cao</h1>
+                <p data-aos="fade-up" data-aos-delay="100">
+                  Khám phá các sản phẩm công nghệ mới nhất
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary btn-lg"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  >Xem ngay</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="hero-slide"
+            style="background-image: url('images/banner2.png')"
+          >
+            <div class="container">
+              <div class="hero-content">
+                <h1 data-aos="fade-up">Giảm giá đặc biệt</h1>
+                <p data-aos="fade-up" data-aos-delay="100">
+                  Ưu đãi lên đến 50% cho các sản phẩm hot
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary btn-lg"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  >Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Search Section -->
+    <section class="search-section py-4">
+      <div class="container">
+        <div class="search-wrapper text-center mb-3">
+          <h2 class="search-title mb-3">Gợi ý chủ đề tìm kiếm</h2>
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Bạn đang tìm gì?" />
+          </div>
+        </div>
+
+        <!-- Topic Suggestions -->
+        <div class="topics-grid">
+          <!-- Chủ đề thiết kế -->
+          <a href="#" class="topic-item">
+            <div class="topic-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Chủ đề thiết kế nổi bật</h3>
+          </a>
+
+          <!-- Pack file chia sẻ -->
+          <a href="#" class="topic-item">
+            <div class="topic-icon">
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <h3>Pack file chia sẻ miễn phí</h3>
+          </a>
+
+          <!-- Tài nguyên Việt hóa -->
+          <a href="#" class="topic-item">
+            <div class="topic-icon">
+              <i class="fas fa-language"></i>
+            </div>
+            <h3>Tài nguyên file Việt hóa</h3>
+          </a>
+
+          <!-- Poster -->
+          <a href="#" class="topic-item">
+            <div class="topic-icon">
+              <i class="fas fa-image"></i>
+            </div>
+            <h3>Poster thương mại điện tử</h3>
+          </a>
+
+          <!-- Plugin -->
+          <a href="#" class="topic-item">
+            <div class="topic-icon">
+              <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <h3>Plugin, Preset, brushes design</h3>
+          </a>
+
+          <!-- Hiệu ứng -->
+          <a href="#" class="topic-item">
+            <div class="topic-icon">
+              <i class="fas fa-magic"></i>
+            </div>
+            <h3>Hiệu ứng ánh sáng (effects)</h3>
+          </a>
+
+          <!-- Font -->
+          <a href="#" class="topic-item">
+            <div class="topic-icon">
+              <i class="fas fa-font"></i>
+            </div>
+            <h3>Font Việt hóa miễn phí</h3>
+          </a>
+
+          <!-- Text Effect -->
+          <a href="#" class="topic-item">
+            <div class="topic-icon">
+              <i class="fas fa-text-height"></i>
+            </div>
+            <h3>Hiệu ứng chữ (text effect 3D)</h3>
+          </a>
+
+          <!-- PNG -->
+          <a href="#" class="topic-item">
+            <div class="topic-icon">
+              <i class="fas fa-file-image"></i>
+            </div>
+            <h3>File PNG tổng hợp</h3>
+          </a>
+
+          <!-- UI/UX -->
+          <a href="#" class="topic-item">
+            <div class="topic-icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <h3>UX/UI Figma Template</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="section-title" data-aos="fade-up">
+            <i class="fas fa-fire"></i>
+            Sản phẩm bán chạy
+          </h2>
+        </div>
+        <div class="row g-4">
+          <!-- STALKER: Shadow of Chernobyl -->
+          <div class="col-6 col-md-3" data-aos="fade-up">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="discount-badge">-37%</span>
+                <img
+                  src="images/product.jpg"
+                  class="img-fluid"
+                  alt="STALKER: Shadow of Chernobyl"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  S.T.A.L.K.E.R.: Shadow of Chernobyl (CD-Key)
+                </h3>
+                <div class="product-price">
+                  <span class="sale-price">119.000đ</span>
+                  <span class="original-price">188.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STALKER: Call of Pripyat -->
+          <div class="col-6 col-md-3" data-aos="fade-up">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="discount-badge">-37%</span>
+                <img
+                  src="images/product.jpg"
+                  class="img-fluid"
+                  alt="STALKER: Call of Pripyat"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  S.T.A.L.K.E.R.: Call of Pripyat (CD-Key)
+                </h3>
+                <div class="product-price">
+                  <span class="sale-price">119.000đ</span>
+                  <span class="original-price">188.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shapr3D -->
+          <div class="col-6 col-md-3" data-aos="fade-up">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="discount-badge">-92%</span>
+                <img src="images/product.jpg" class="img-fluid" alt="Shapr3D" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Shapr3d 14 ngày - Tài khoản</h3>
+                <div class="product-price">
+                  <span class="sale-price">39.000đ</span>
+                  <span class="original-price">500.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NBA 2K24 -->
+          <div class="col-6 col-md-3" data-aos="fade-up">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="discount-badge">-57%</span>
+                <img
+                  src="images/product.jpg"
+                  class="img-fluid"
+                  alt="NBA 2K24"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  NBA 2K24 Kobe Bryant Edition - CD Key
+                </h3>
+                <div class="product-price">
+                  <span class="sale-price">429.000đ</span>
+                  <span class="original-price">1.000.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ace Attorney -->
+          <div class="col-6 col-md-3" data-aos="fade-up">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="discount-badge">-58%</span>
+                <img
+                  src="images/product.jpg"
+                  class="img-fluid"
+                  alt="Ace Attorney"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  The Great Ace Attorney Chronicles - CD Key
+                </h3>
+                <div class="product-price">
+                  <span class="sale-price">399.000đ</span>
+                  <span class="original-price">940.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kingdom Come -->
+          <div class="col-6 col-md-3" data-aos="fade-up">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="discount-badge">-24%</span>
+                <img
+                  src="images/product.jpg"
+                  class="img-fluid"
+                  alt="Kingdom Come"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  Kingdom Come: Deliverance - CD Key
+                </h3>
+                <div class="product-price">
+                  <span class="sale-price">379.000đ</span>
+                  <span class="original-price">499.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blasphemous 2 -->
+          <div class="col-6 col-md-3" data-aos="fade-up">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="discount-badge">-60%</span>
+                <img
+                  src="images/product.jpg"
+                  class="img-fluid"
+                  alt="Blasphemous 2"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Blasphemous 2 - CDKEY</h3>
+                <div class="product-price">
+                  <span class="sale-price">239.000đ</span>
+                  <span class="original-price">600.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Far Cry Primal -->
+          <div class="col-6 col-md-3" data-aos="fade-up">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="discount-badge">-69%</span>
+                <img
+                  src="images/product.jpg"
+                  class="img-fluid"
+                  alt="Far Cry Primal"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Far Cry Primal - CDKEY Uplay</h3>
+                <div class="product-price">
+                  <span class="sale-price">259.000đ</span>
+                  <span class="original-price">825.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

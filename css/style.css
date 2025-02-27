@@ -354,3 +354,157 @@ body {
     width: 180px;
   }
 }
+
+/* Product Detail Styles */
+.product-detail-section {
+  padding-top: 100px;
+}
+
+.product-gallery .main-image {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #007bff;
+}
+
+.product-category {
+  color: #666;
+  font-size: 0.875rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.product-info-detail .product-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-badge.sold-out {
+  background: #dc3545;
+  color: white;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-facebook,
+.btn-zalo {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-facebook {
+  background: #1877f2;
+}
+
+.btn-zalo {
+  background: #0068ff;
+}
+
+.btn-facebook:hover,
+.btn-zalo:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+/* Product pricing styles */
+.product-pricing h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.price-option {
+  color: #007bff;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+}
+
+/* Product Details Styles */
+.product-details {
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+}
+
+.details-content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.details-content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 1.5rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.details-content h3:first-child {
+  margin-top: 0;
+}
+
+/* Xóa các style căn giữa không cần thiết */
+.details-title {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-info-detail .product-title {
+    font-size: 1.25rem;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .product-details {
+    padding: 1rem 0;
+  }
+
+  .details-content {
+    padding: 1rem;
+  }
+}
